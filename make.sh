@@ -1,12 +1,12 @@
 #!/bin/bash
 
 if [ "$1" == "report" ]; then
-    ./vendor/bin/phpcov merge --html="./html" ./data -vvv
+    ./vendor/bin/phpcov merge --html="./html" ./report -vvv
     exit 0
 fi
 
 if [ "$1" == "clean" ]; then
-    rm -f ./data/*
+    rm -f ./report/*
     rm -rf ./html
     echo "done!"
     exit 0

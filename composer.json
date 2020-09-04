@@ -1,13 +1,12 @@
 {
-    "name": "jesse/phpcoverage",
+    "name": "decoration/php-code-coverage",
     "authors": [
         {
-            "name": "sijie.li",
-            "email": "lsj86@qq.com"
+            "name": "vrlab-decoration"
         }
     ],
     "require": {
-        "phpunit/phpunit": "~4.8",
+        "phpunit/phpunit": "^8",
         "phpunit/phpcov": "*"
     }
 }
