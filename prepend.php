@@ -18,5 +18,5 @@ register_shutdown_function(function (CodeCoverage $coverage) {
     $coverage->stop();
     $savePath = __DIR__ . '/report';
     $cov = '<?php return unserialize(' . var_export(serialize($coverage), true) . ');';
-    file_put_contents($savePath . '/' . date('Y-m-d H') . '.' . uniqid() . '.cov', $cov);
+    file_put_contents($savePath . '/' . date('Y-m-d-H') . '.' . uniqid() . '.cov', $cov);
 }, $coverage);
