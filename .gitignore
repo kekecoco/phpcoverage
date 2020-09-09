@@ -1,5 +1,2 @@
-*.json
 *.lock
 vendor
-data
-html
